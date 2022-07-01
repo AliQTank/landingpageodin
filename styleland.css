@@ -1,0 +1,37 @@
+:root {
+    --dark-background-color1: #1f2937;    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--dark-background-color1);
+}
+
+header {
+    display: flex;
+}
+
+nav>ul {
+    display: flex;
+}
+
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+
+
+main {
+    padding: 100px;
+}
+
+a {
+    color: aliceblue;
+}
