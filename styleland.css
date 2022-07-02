@@ -42,7 +42,6 @@ nav>ul {
 
 nav li {
     padding-right: 20px;
-    list-style: none;
 }
 
 
@@ -55,6 +54,16 @@ header img {
 
 a {
     color: aliceblue;
+}
+
+main section {
+    display: flex;
+}
+
+
+main a {
+    color: blue;
+    text-decoration: none;
 }
 
 #intro {
@@ -73,10 +82,19 @@ a {
     height: auto;
 }
 
+.characters ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1 {
     font-size: 48px;
 }
 
 footer {
-    
+    height: 100px;
+}
+
+li {
+    list-style: none;
 }
