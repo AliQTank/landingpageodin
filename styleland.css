@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
 :root {
     --dark-background-color1: #1f2937;    
 
@@ -9,6 +11,8 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(21, 43, 116);
 }
 
 header, footer, #intro {
@@ -18,12 +22,14 @@ header, footer, #intro {
 }
 
 header {
-    padding-left: 40px;
+    padding-right: 10px;
     display: flex;
     flex-direction: row; /*DEFAULT PROPERTY, ONLY ADDED AS A REMINDER*/
     flex-wrap: nowrap; /*DEFAULT PROPERTY, ONLY ADDED AS A REMINDER*/
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100vw;
 }
 
 header nav {
@@ -52,6 +58,7 @@ header img {
 }
 
 
+
 a {
     color: aliceblue;
 }
@@ -62,29 +69,65 @@ main section {
 
 
 main a {
-    color: blue;
+    color: aliceblue;
     text-decoration: none;
+    text-align: center;
 }
+
+section {
+    height: 100vh;
+}
+
 
 #intro {
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-around;
+    align-items: center;
 }
 
 #intro div {
-    align-self: center;
+    text-align: center;
 }
 
 #intro figure img {
-    width: 900px;
+    width: 1200px;
     height: auto;
+}
+
+#mass_effect_01 {
+    height: auto;
+}
+
+#mass_effect_02 {
+    height: auto;
+}
+
+#mass_effect_03 {
+    height: auto;
+}
+
+.data {
+    color: aqua;
+    color: aliceblue;
 }
 
 .characters ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.characters ul li {
+
+    padding: 10px;
+}
+
+.characters ul li img {
+    width: 300px;
+    height: 405px;
 }
 
 h1 {
