@@ -13,6 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(21, 43, 116);
+    background-color: var(--dark-background-color1);
 }
 
 header, footer, #intro {
@@ -97,8 +98,8 @@ section>* {
 
 #intro div {
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     border: 2px solid red;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -136,7 +137,10 @@ section>* {
 
 .characters ul li {
 
-    padding: 10px;
+    padding: 0px;
+    margin: 7px;
+    border: 1px solid red;
+    border: 1px solid rgb(112, 9, 9);
 }
 
 .characters ul li img {
@@ -144,6 +148,12 @@ section>* {
     height: auto;
     height: 405px;
     object-fit: cover;
+}
+
+.characters li p {
+    text-align: center;
+    margin-bottom: 10px;
+
 }
 
 h1 {
@@ -162,5 +172,31 @@ li {
 
 p {
     font-size: 24px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
 
+button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    background-color: orangered;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    display: block;
+}
+
+button:hover {
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered;
+}
+
+input[type="email"] {
+    width: 300px;
+    height: 25px;
 }
