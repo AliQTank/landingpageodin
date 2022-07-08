@@ -76,6 +76,12 @@ main a {
 
 section {
     height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+section>* {
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 
@@ -86,15 +92,23 @@ section {
     flex-direction: column-reverse;
     justify-content: space-around;
     align-items: center;
+    height: auto;
 }
 
 #intro div {
     text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 2px solid red;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 #intro figure img {
     width: 1200px;
     height: auto;
+
+    margin-bottom: 90px;
 }
 
 #mass_effect_01 {
@@ -117,7 +131,7 @@ section {
 .characters ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .characters ul li {
@@ -127,11 +141,15 @@ section {
 
 .characters ul li img {
     width: 300px;
+    height: auto;
     height: 405px;
+    object-fit: cover;
 }
 
 h1 {
     font-size: 48px;
+    margin-bottom: 90px;
+    margin-top: 50px;
 }
 
 footer {
@@ -140,4 +158,9 @@ footer {
 
 li {
     list-style: none;
+}
+
+p {
+    font-size: 24px;
+
 }
